@@ -1,0 +1,36 @@
+{
+    "name": "Bo Phan VPP",
+    "doctype": "DocType",
+    "module": "Van Phong Pham",
+    "engine": "InnoDB",
+    "autoname": "Prompt",
+    "naming_rule": "Set by user",
+    "istable": 0,
+    "issingle": 0,
+    "is_submittable": 0,
+    "track_changes": 0,
+    "fields": [
+        {
+            "fieldname": "ten_bo_phan",
+            "label": "Tên bộ phận",
+            "fieldtype": "Data",
+            "reqd": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        },
+        {
+            "role": "Employee",
+            "read": 1,
+            "write": 0,
+            "create": 0,
+            "delete": 0
+        }
+    ]
+}
