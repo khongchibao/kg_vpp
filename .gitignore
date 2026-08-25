@@ -53,3 +53,13 @@ jspm_packages/
 
 # Aider AI Chat
 .aider*
+
+# Frappe site config (never commit)
+site_config.json
+/**/site_config.json
+
+# Build output / bundles
+/**/public/dist
+.build.json
+*.bundle.js
+*.bundle.css
