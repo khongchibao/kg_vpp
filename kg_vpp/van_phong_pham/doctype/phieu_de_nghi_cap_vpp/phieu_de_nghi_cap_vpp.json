@@ -52,13 +52,15 @@
             "label": "Người nhận phiếu",
             "fieldtype": "Link",
             "options": "User",
-            "reqd": 0
+            "reqd": 0,
+            "allow_on_submit": 1
         },
         {
             "fieldname": "ngay_nhan_phieu",
             "label": "Ngày nhận phiếu",
             "fieldtype": "Date",
-            "reqd": 0
+            "reqd": 0,
+            "allow_on_submit": 1
         },
         {
             "fieldname": "ghi_chu",
@@ -93,6 +95,18 @@
             "submit": 0,
             "cancel": 0,
             "amend": 0
+        },
+        {
+            "role": "VPP Truong Bo Phan",
+            "read": 1,
+            "write": 1,
+            "submit": 1
+        },
+        {
+            "role": "VPP Phong To Chuc",
+            "read": 1,
+            "write": 1,
+            "submit": 1
         }
     ]
 }
