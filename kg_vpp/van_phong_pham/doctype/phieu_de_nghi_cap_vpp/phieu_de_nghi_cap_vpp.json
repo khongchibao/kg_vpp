@@ -1,0 +1,98 @@
+{
+    "name": "Phieu De Nghi Cap VPP",
+    "doctype": "DocType",
+    "module": "Van Phong Pham",
+    "engine": "InnoDB",
+    "autoname": "naming_series:",
+    "naming_rule": "By \"Naming Series\" field",
+    "istable": 0,
+    "issingle": 0,
+    "is_submittable": 1,
+    "track_changes": 1,
+    "fields": [
+        {
+            "fieldname": "naming_series",
+            "label": "Số phiếu",
+            "fieldtype": "Select",
+            "options": "VPP-.YYYY.-.MM.-.####",
+            "default": "VPP-.YYYY.-.MM.-.####",
+            "reqd": 1
+        },
+        {
+            "fieldname": "ngay_de_nghi",
+            "label": "Ngày đề nghị",
+            "fieldtype": "Date",
+            "default": "Today",
+            "reqd": 1
+        },
+        {
+            "fieldname": "nguoi_de_nghi",
+            "label": "Người đề nghị",
+            "fieldtype": "Link",
+            "options": "User",
+            "default": "__user",
+            "reqd": 1
+        },
+        {
+            "fieldname": "bo_phan",
+            "label": "Bộ phận",
+            "fieldtype": "Link",
+            "options": "Bo Phan VPP",
+            "reqd": 1
+        },
+        {
+            "fieldname": "chi_tiet_vat_tu",
+            "label": "Chi tiết vật tư",
+            "fieldtype": "Table",
+            "options": "Chi Tiet De Nghi VPP",
+            "reqd": 1
+        },
+        {
+            "fieldname": "nguoi_nhan_phieu",
+            "label": "Người nhận phiếu",
+            "fieldtype": "Link",
+            "options": "User",
+            "reqd": 0
+        },
+        {
+            "fieldname": "ngay_nhan_phieu",
+            "label": "Ngày nhận phiếu",
+            "fieldtype": "Date",
+            "reqd": 0
+        },
+        {
+            "fieldname": "ghi_chu",
+            "label": "Ghi chú",
+            "fieldtype": "Small Text",
+            "reqd": 0
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1,
+            "print": 1,
+            "email": 1,
+            "share": 1,
+            "export": 1,
+            "report": 1,
+            "import": 1
+        },
+        {
+            "role": "Employee",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 0,
+            "submit": 0,
+            "cancel": 0,
+            "amend": 0
+        }
+    ]
+}
