@@ -21,6 +21,8 @@ def nap_du_lieu_tong_hop(ten_phieu: str, tu_ngay: str, den_ngay: str):
 
 	tong_theo_vat_tu = defaultdict(int)
 	if ten_phieu_de_nghi:
+		# get_all bỏ qua permission CHỦ ĐÍCH: hàm này tổng hợp toàn công ty,
+		# không giới hạn theo bộ phận của người dùng hiện tại.
 		chi_tiet_vat_tu = frappe.get_all(
 			"Chi Tiet De Nghi VPP",
 			filters={
@@ -32,14 +34,24 @@ def nap_du_lieu_tong_hop(ten_phieu: str, tu_ngay: str, den_ngay: str):
 		for row in chi_tiet_vat_tu:
 			tong_theo_vat_tu[row.vat_tu] += row.so_luong
 
+	ton_kho_theo_vat_tu = {}
+	if tong_theo_vat_tu:
+		ton_kho_theo_vat_tu = {
+			row.name: row.ton_kho_hien_tai
+			for row in frappe.get_all(
+				"Vat Tu VPP",
+				filters={"name": ["in", list(tong_theo_vat_tu.keys())]},
+				fields=["name", "ton_kho_hien_tai"],
+			)
+		}
+
 	ket_qua = []
 	for vat_tu, tong_so_luong in tong_theo_vat_tu.items():
-		ton_kho_hien_tai = frappe.db.get_value("Vat Tu VPP", vat_tu, "ton_kho_hien_tai") or 0
 		ket_qua.append(
 			{
 				"vat_tu": vat_tu,
 				"tong_so_luong_de_nghi": tong_so_luong,
-				"ton_kho_hien_tai": ton_kho_hien_tai,
+				"ton_kho_hien_tai": ton_kho_theo_vat_tu.get(vat_tu) or 0,
 			}
 		)
 
