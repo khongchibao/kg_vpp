@@ -1,0 +1,101 @@
+{
+ "app": "kg_vpp",
+ "creation": "2026-08-26 09:25:44.333718",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "package",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "list",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Home",
+   "link_to": "Van Phong Pham",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "list",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Phieu De Nghi Cap VPP",
+   "link_to": "Phieu De Nghi Cap VPP",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "list",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Phi\u1ebfu Xu\u1ea5t Kho VPP",
+   "link_to": "Phieu Xuat Kho VPP",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "list",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Phi\u1ebfu Nh\u1eadp Kho VPP",
+   "link_to": "Phieu Nhap Kho VPP",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "list",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Phi\u1ebfu T\u1ed5ng H\u1ee3p Mua VPP",
+   "link_to": "Phieu Tong Hop Mua VPP",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "list",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "DM V\u1eadt T\u01b0 VPP",
+   "link_to": "Vat Tu VPP",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "list",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "DM B\u1ed9 Ph\u1eadn VPP",
+   "link_to": "Bo Phan VPP",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-08-26 13:27:11.708570",
+ "modified_by": "Administrator",
+ "module": "Van Phong Pham",
+ "name": "Van Phong Pham",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "Van Phong Pham"
+}
