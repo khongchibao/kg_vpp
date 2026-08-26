@@ -1,0 +1,70 @@
+{
+    "name": "Phieu Nhap Kho VPP",
+    "doctype": "DocType",
+    "module": "Van Phong Pham",
+    "engine": "InnoDB",
+    "autoname": "naming_series:",
+    "naming_rule": "By \"Naming Series\" field",
+    "istable": 0,
+    "issingle": 0,
+    "is_submittable": 1,
+    "track_changes": 1,
+    "fields": [
+        {
+            "fieldname": "naming_series",
+            "label": "Số phiếu",
+            "fieldtype": "Select",
+            "options": "NKVPP-.YYYY.-.MM.-.####",
+            "default": "NKVPP-.YYYY.-.MM.-.####",
+            "reqd": 1
+        },
+        {
+            "fieldname": "ngay_nhap",
+            "label": "Ngày nhập",
+            "fieldtype": "Date",
+            "default": "Today",
+            "reqd": 1
+        },
+        {
+            "fieldname": "nguoi_nhap",
+            "label": "Người nhập",
+            "fieldtype": "Link",
+            "options": "User",
+            "default": "__user",
+            "reqd": 1
+        },
+        {
+            "fieldname": "chi_tiet_nhap",
+            "label": "Chi tiết nhập",
+            "fieldtype": "Table",
+            "options": "Chi Tiet Nhap Kho VPP",
+            "reqd": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1,
+            "print": 1,
+            "email": 1,
+            "share": 1,
+            "export": 1,
+            "report": 1,
+            "import": 1
+        },
+        {
+            "role": "VPP Phong To Chuc",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "submit": 1,
+            "cancel": 1
+        }
+    ]
+}
