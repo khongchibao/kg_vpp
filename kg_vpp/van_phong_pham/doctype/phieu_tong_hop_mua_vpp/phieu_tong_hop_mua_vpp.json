@@ -1,0 +1,86 @@
+{
+    "name": "Phieu Tong Hop Mua VPP",
+    "doctype": "DocType",
+    "module": "Van Phong Pham",
+    "engine": "InnoDB",
+    "autoname": "naming_series:",
+    "naming_rule": "By \"Naming Series\" field",
+    "istable": 0,
+    "issingle": 0,
+    "is_submittable": 1,
+    "track_changes": 1,
+    "fields": [
+        {
+            "fieldname": "naming_series",
+            "label": "Số phiếu",
+            "fieldtype": "Select",
+            "options": "THMH-VPP-.YYYY.-.MM.-.####",
+            "default": "THMH-VPP-.YYYY.-.MM.-.####",
+            "reqd": 1
+        },
+        {
+            "fieldname": "tu_ngay",
+            "label": "Từ ngày",
+            "fieldtype": "Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "den_ngay",
+            "label": "Đến ngày",
+            "fieldtype": "Date",
+            "reqd": 1
+        },
+        {
+            "fieldname": "nguoi_lap",
+            "label": "Người lập",
+            "fieldtype": "Link",
+            "options": "User",
+            "default": "__user",
+            "reqd": 1
+        },
+        {
+            "fieldname": "nap_du_lieu",
+            "label": "Nạp dữ liệu từ phiếu đề nghị",
+            "fieldtype": "Button"
+        },
+        {
+            "fieldname": "chi_tiet_tong_hop",
+            "label": "Chi tiết tổng hợp",
+            "fieldtype": "Table",
+            "options": "Chi Tiet Tong Hop Mua VPP",
+            "reqd": 1
+        }
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1,
+            "submit": 1,
+            "cancel": 1,
+            "amend": 1,
+            "print": 1,
+            "email": 1,
+            "share": 1,
+            "export": 1,
+            "report": 1,
+            "import": 1
+        },
+        {
+            "role": "VPP Phong To Chuc",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "submit": 0
+        },
+        {
+            "role": "VPP Truong Phong To Chuc",
+            "read": 1,
+            "write": 1,
+            "create": 0,
+            "submit": 1
+        }
+    ]
+}

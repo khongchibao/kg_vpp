@@ -1,0 +1,43 @@
+{
+    "name": "Chi Tiet Tong Hop Mua VPP",
+    "doctype": "DocType",
+    "module": "Van Phong Pham",
+    "engine": "InnoDB",
+    "autoname": "hash",
+    "naming_rule": "Random",
+    "istable": 1,
+    "issingle": 0,
+    "is_submittable": 0,
+    "track_changes": 0,
+    "fields": [
+        {
+            "fieldname": "vat_tu",
+            "label": "Vật tư",
+            "fieldtype": "Link",
+            "options": "Vat Tu VPP",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "tong_so_luong_de_nghi",
+            "label": "Tổng SL đề nghị",
+            "fieldtype": "Int",
+            "read_only": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "ton_kho_hien_tai",
+            "label": "Tồn kho hiện tại",
+            "fieldtype": "Int",
+            "read_only": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "de_xuat_mua",
+            "label": "Đề xuất mua",
+            "fieldtype": "Int",
+            "reqd": 1,
+            "in_list_view": 1
+        }
+    ]
+}
