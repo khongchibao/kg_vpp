@@ -1,0 +1,30 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-08-26 05:22:59.730286",
+  "name": "Gửi duyệt",
+  "workflow_action_name": "Gửi duyệt"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-08-26 05:22:59.732687",
+  "name": "Duyệt",
+  "workflow_action_name": "Duyệt"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-08-26 05:22:59.733194",
+  "name": "Từ chối",
+  "workflow_action_name": "Từ chối"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2026-08-26 05:22:59.733650",
+  "name": "Tiếp nhận",
+  "workflow_action_name": "Tiếp nhận"
+ }
+]

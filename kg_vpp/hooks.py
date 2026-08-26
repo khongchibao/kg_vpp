@@ -256,3 +256,16 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+# Fixtures
+# --------
+# Export DB-only records (roles, workflow) that belong to this app,
+# scoped by exact name so no ERPNext/other-app records leak in.
+
+fixtures = [
+	{"dt": "Role", "filters": [["name", "in", ["VPP Truong Bo Phan", "VPP Phong To Chuc", "VPP Truong Phong To Chuc"]]]},
+	{"dt": "Workflow", "filters": [["name", "in", ["Quy Trinh Phieu De Nghi Cap VPP"]]]},
+	{"dt": "Workflow State", "filters": [["name", "in", ["Nháp", "Chờ duyệt", "Đã duyệt", "Đã tiếp nhận"]]]},
+	{"dt": "Workflow Action Master", "filters": [["name", "in", ["Gửi duyệt", "Duyệt", "Từ chối", "Tiếp nhận"]]]},
+	{"dt": "Custom Field", "filters": [["dt", "=", "Phieu De Nghi Cap VPP"], ["fieldname", "=", "workflow_state"]]},
+]
+
