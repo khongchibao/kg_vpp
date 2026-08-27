@@ -5,6 +5,8 @@
     "engine": "InnoDB",
     "autoname": "VT-.####",
     "naming_rule": "Expression (old style)",
+    "title_field": "ten_vat_tu",
+    "show_title_field_in_link": 1,
     "istable": 0,
     "issingle": 0,
     "is_submittable": 0,

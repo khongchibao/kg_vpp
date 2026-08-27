@@ -19,6 +19,15 @@
             "in_list_view": 1
         },
         {
+            "fieldname": "ten_vat_tu",
+            "label": "Tên vật tư",
+            "fieldtype": "Data",
+            "fetch_from": "vat_tu.ten_vat_tu",
+            "read_only": 1,
+            "reqd": 0,
+            "in_list_view": 1
+        },
+        {
             "fieldname": "qui_cach",
             "label": "Quy cách",
             "fieldtype": "Data",

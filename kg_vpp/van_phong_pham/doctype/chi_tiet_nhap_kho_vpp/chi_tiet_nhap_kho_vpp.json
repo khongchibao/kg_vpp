@@ -19,6 +19,32 @@
             "in_list_view": 1
         },
         {
+            "fieldname": "ten_vat_tu",
+            "label": "Tên vật tư",
+            "fieldtype": "Data",
+            "fetch_from": "vat_tu.ten_vat_tu",
+            "read_only": 1,
+            "reqd": 0,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "qui_cach",
+            "label": "Quy cách",
+            "fieldtype": "Data",
+            "fetch_from": "vat_tu.qui_cach_mac_dinh",
+            "reqd": 0,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "dvt",
+            "label": "ĐVT",
+            "fieldtype": "Data",
+            "fetch_from": "vat_tu.dvt",
+            "read_only": 1,
+            "reqd": 0,
+            "in_list_view": 1
+        },
+        {
             "fieldname": "so_luong_nhap",
             "label": "SL nhập",
             "fieldtype": "Int",
