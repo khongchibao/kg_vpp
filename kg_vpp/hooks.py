@@ -11,15 +11,14 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "kg_vpp",
-# 		"logo": "/assets/kg_vpp/logo.png",
-# 		"title": "Kg Vpp",
-# 		"route": "/kg_vpp",
-# 		"has_permission": "kg_vpp.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "kg_vpp",
+		"logo": "",
+		"title": "Văn phòng phẩm",
+		"route": "/app/van-phong-pham",
+	}
+]
 
 # Includes in <head>
 # ------------------
